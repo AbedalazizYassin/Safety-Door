@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:.2s linear;
+}
+.container{
+    background: white;
+    padding: 15px 10%;
+    
+}
+
+.container .box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+gap: 15pxpx;
+
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgpa(0,0,0,2);
+    border-radius: 5px;
+    background:#fff ;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+.container .box-container .box .img{
+    height: 80px;
+    margin-right: 100px;
+    align-content: left;
+
+    
+}
+.containers {
+    width: 80%;/* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll;
+     /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: add border for styling */
+    
+   
+    margin: 15px 10%;
+    
+    text-align: left;
+    
+    
+    
+    /* Optional: add padding for spacing */
+}
+
+.scrollable {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #E61E26;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Arial,Tahoma ;
+    cursor: pointer;
+    transition:0.2s ;
+}
+.up.show{
+    right: 10px;
+}
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
